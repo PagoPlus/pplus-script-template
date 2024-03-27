@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "lua-types": "^2.13.1",
-    "pplus-script-types": "^0.0.1",
+    "pplus-script-types": "^0.1.0",
     "typescript": "5.4.2",
     "typescript-to-lua": "^1.25.1"
   },
