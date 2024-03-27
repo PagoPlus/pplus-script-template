@@ -10,6 +10,10 @@
   "tstl": {
     "luaTarget": "5.3",
     "buildMode": "default",
-    "noImplicitSelf": true
+    "noImplicitSelf": true,
+    "noImplicitGlobalVariables": true,
+    "tstlVerbose": true,
+    "luaBundle": "dist/script.lua",
+    "luaBundleEntry": "./src/main.ts"
   }
 }
