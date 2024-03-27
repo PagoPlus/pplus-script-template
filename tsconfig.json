@@ -4,7 +4,7 @@
     "target": "ESNext",
     "lib": ["es2019"],
     "moduleResolution": "Node",
-    "types": [ "pplus-script-types" ],
+    "types": ["pplus-script-types"],
     "strict": true
   },
   "tstl": {
