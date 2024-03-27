@@ -1,0 +1,31 @@
+{
+  "name": "pplus-script-template",
+  "version": "0.0.1",
+  "description": "Template to create a Script for Pago Plus",
+  "main": "src/main.ts",
+  "author": "Fernando Mumbach <fermuch@ayvu.net>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src/main.ts",
+    "check": "tsc --noEmit && npm run lint"
+  },
+  "dependencies": {
+    "lua-types": "^2.13.1",
+    "pplus-script-types": "^0.0.1",
+    "typescript": "5.4.2",
+    "typescript-to-lua": "^1.25.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-no-async": "^1.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5"
+  }
+}

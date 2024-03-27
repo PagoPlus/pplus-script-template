@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["es2019"],
+    "moduleResolution": "Node",
+    "types": [ "pplus-script-types" ],
+    "strict": true
+  },
+  "tstl": {
+    "luaTarget": "5.3",
+    "buildMode": "default",
+    "noImplicitSelf": true
+  }
+}
