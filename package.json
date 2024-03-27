@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint src/main.ts",
     "check": "tsc --noEmit && npm run lint",
-    "build": "tstl"
+    "build": "tstl",
+    "dev": "tstl --watch"
   },
   "dependencies": {
     "lua-types": "^2.13.1",
