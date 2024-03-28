@@ -1,5 +1,3 @@
-import { JSONSchema } from "json-schema-to-ts";
-
 const settingsSchema = {
   type: "object",
   additionalProperties: false,
@@ -14,7 +12,7 @@ const settingsSchema = {
       default: false,
     },
   },
-} as const satisfies JSONSchema;
+} as const;
 
 pplus.set_script_metadata({
   name: "Demo script",
@@ -40,5 +38,7 @@ pplus.set_script_metadata({
       label: "Are you agreeing?",
     },
   ],
-  settingsSchema: settingsSchema,
+  settingsSchema,
 });
+
+export const settings = pplus.get_settings(settingsSchema);
