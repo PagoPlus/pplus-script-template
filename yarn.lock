@@ -46,6 +46,18 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.0.tgz#a5417ae8427873f1dd08b70b3574b453e67b5f7f"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
+"@formkit/core@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@formkit/core/-/core-1.6.1.tgz#78da941c92996351c6e5caca005602d2c3475fea"
+  integrity sha512-9QV6Si+YlZ059RvB1NaJiRu9vcTVEMpJ5bIi6Aqt5AyIIQDk1m/u1N0mdugolrhv3FShA5RVJ1Mj2m2zF0BmIw==
+  dependencies:
+    "@formkit/utils" "1.6.1"
+
+"@formkit/utils@1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@formkit/utils/-/utils-1.6.1.tgz#40ed45fc63b3696143639adba8d32d43a5df4aa8"
+  integrity sha512-34KtuNgNoVe/kG4eJ52tUgJ/kT+PTrQGvtHg9n4zb5oTZW66J7wZR1IbRl/PV19yZr6gvpLBfyt9VYEgkEnZHg==
+
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.14.tgz#d78e481a039f7566ecc9660b4ea7fe6b1fec442b"
@@ -91,7 +103,7 @@
   resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.1.1.tgz#1ec17e2edbec25c8306d424ecfbf13c7de1aaa31"
   integrity sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==
 
-"@types/json-schema@^7.0.12":
+"@types/json-schema@^7.0.12", "@types/json-schema@^7.0.15":
   version "7.0.15"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
@@ -1458,10 +1470,14 @@ possible-typed-array-names@^1.0.0:
   resolved "https://registry.yarnpkg.com/possible-typed-array-names/-/possible-typed-array-names-1.0.0.tgz#89bb63c6fada2c3e90adc4a647beeeb39cc7bf8f"
   integrity sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==
 
-pplus-script-types@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/pplus-script-types/-/pplus-script-types-0.1.1.tgz#22fa15325fe010c375c157d626b4ba8345c5d6e5"
-  integrity sha512-wRpHIW4A1ot//tgp1JJMqIp5X0rjJYOV79WdCyxMCppqYdskKBH/K23uO798ru/pr298oqjMmPa7WVEowVVoxA==
+pplus-script-types@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/pplus-script-types/-/pplus-script-types-0.2.0.tgz#2564cd69822edd2b6246daf7ce30c1fcbe1ec208"
+  integrity sha512-zIxzNZKh5qD6+apVvOzois+NoCSbpU8QcLMdfoR1zcxE70M3Q1WQN11fP2hsPC5dgZp+D1lC0C6ouRf2SjHASw==
+  dependencies:
+    "@formkit/core" "^1.6.1"
+    "@types/json-schema" "^7.0.15"
+    json-schema-to-ts "^3.0.1"
 
 prelude-ls@^1.2.1:
   version "1.2.1"

@@ -19,7 +19,7 @@ pplus.set_script_metadata({
   description:
     "This is a demo script. It does nothing, but showcases how to set up the scripting environment!",
   version: "0.0.1",
-  settingsForm: [
+  settings_form: [
     {
       $el: "h2",
       if: "true",
@@ -38,7 +38,7 @@ pplus.set_script_metadata({
       label: "Are you agreeing?",
     },
   ],
-  settingsSchema,
+  settings_schema: settingsSchema,
 });
 
 export const settings = pplus.get_settings(settingsSchema);
